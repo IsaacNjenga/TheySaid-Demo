@@ -187,7 +187,7 @@ export default function Home() {
             level={1}
             style={{ marginBottom: 0, fontSize: 50, fontWeight: "lighter" }}
           >
-            Don't create a survey.
+            {"Don't create a survey."}
           </Title>
           <Title
             level={1}
@@ -297,23 +297,20 @@ export default function Home() {
                 borderRadius: 20,
               }}
             >
-              {/* Top-left Avatar */}
               <div style={{ position: "absolute", top: 16, left: 16 }}>
                 <Avatar src={f.avatar} size={58} />
               </div>
 
-              {/* Centered Content */}
               <div
                 style={{
                   display: "flex",
-                  paddingTop: "40px", // push content below avatar
+                  paddingTop: "40px",
                   marginBottom: 20,
                 }}
               >
                 <Paragraph style={{ fontSize: 18 }}>"{f.content}"</Paragraph>
               </div>
 
-              {/* Bottom Right Name + Occupation */}
               <div
                 style={{
                   position: "absolute",
@@ -325,7 +322,7 @@ export default function Home() {
                 <Title level={3} style={{ margin: 0 }}>
                   {f.name}
                 </Title>
-                <Text style={{}}>{f.occupation}</Text>
+                <Text>{f.occupation}</Text>
               </div>
             </Card>
           ))}
