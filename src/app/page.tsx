@@ -183,7 +183,7 @@ export default function Home() {
             margin: 20,
           }}
         >
-          <Title level={1}>Don&apos;t create a survey.</Title>
+          <Title level={1}>Don't create a survey.</Title>
           <Title
             level={1}
             style={{
@@ -303,7 +303,9 @@ export default function Home() {
                   marginBottom: 20,
                 }}
               >
-                <Paragraph style={{ fontSize: 18 }}>"{f.content}"</Paragraph>
+                <Paragraph
+                  style={{ fontSize: 18 }}
+                >{`"${f.content}"`}</Paragraph>
               </div>
 
               <div
